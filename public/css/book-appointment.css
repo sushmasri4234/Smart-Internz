@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0fbfc;
+  min-height: 100vh;
+}
+
+header {
+  position: relative;
+  background: #00acc1;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: white;
+}
+
+#backBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #00acc1;
+  border: 2px solid #00acc1;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#backBtn:hover {
+  background-color: #e0f7fa;
+}
+
+#appointmentFormSection {
+  width: 95%;
+  max-width: 500px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  color: #007b7f;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="file"],
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #00acc1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #008b9a;
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.3rem;
+    padding-right: 50px;
+  }
+
+  #backBtn {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  #appointmentFormSection {
+    padding: 20px;
+  }
+}

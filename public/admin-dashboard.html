@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard - DocSpot</title>
+  <link rel="stylesheet" href="css/admin-dashboard.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome Admin </h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <section>
+    <h2>Pending Doctor Approvals</h2>
+    <table border="1" cellpadding="10">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Mobile</th>
+          <th>Specialization</th>
+          <th>Experience</th>
+          <th>Clinic Address</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="pendingDoctorsBody">
+        <!-- Fetched rows will go here -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="js/admin-dashboard.js"></script>
+</body>
+</html>

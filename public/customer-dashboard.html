@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Customer Dashboard - DocSpot</title>
+  <link rel="stylesheet" href="css/customer-dashboard.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to DocSpot, <span id="customerName"></span> 👋</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <section id="searchDoctors">
+    <h2>Find a Doctor 🩺</h2>
+    <input type="text" id="searchInput" placeholder="Search by name or specialty..." />
+    <button id="searchBtn">Search</button>
+  </section>
+
+  <section id="doctorList">
+    <h3>Available Doctors</h3>
+    <div class="doctor-cards-container" id="doctorCards">
+      <!-- Doctor cards will be injected here -->
+    </div>
+  </section>
+
+  <section id="upcomingAppointments">
+    <h3>Your Upcoming Appointments 📅</h3>
+    <ul id="appointmentsList">
+      <!-- Appointment items will be injected here -->
+    </ul>
+  </section>
+  <div>
+  <button id="historyBtn">📚 Booking History</button>
+  </div>
+  <div id="doctorPopup" class="popup" style="display:none;">
+  <div class="popup-content">
+    <span id="closePopup">&times;</span>
+    <h3 id="popupDoctorName"></h3>
+    <p><strong>Specialization:</strong> <span id="popupSpecialization"></span></p>
+    <p><strong>Experience:</strong> <span id="popupExperience"></span> years</p>
+    <p><strong>Clinic:</strong> <span id="popupClinic"></span></p>
+  </div>
+</div>
+<div id="rescheduleModal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <h3>Reschedule Appointment</h3>
+    <label>New Date:</label><br />
+    <input type="date" id="rescheduleDate" /><br /><br />
+    <label>New Time:</label><br />
+    <input type="time" id="rescheduleTime" /><br /><br />
+    <button id="saveRescheduleBtn">Save</button>
+    <button id="cancelRescheduleBtn">Cancel</button>
+  </div>
+</div>
+
+
+
+  <script src="js/customer-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Appointment - DocSpot</title>
+  <link rel="stylesheet" href="css/book-appointment.css" />
+</head>
+<body>
+
+<header>
+  <button id="backBtn">← Back</button>
+  <h1>Book an Appointment with <span id="doctorName">Loading...</span> 🩺</h1>
+</header>
+
+
+
+  <section id="appointmentFormSection">
+    <form id="appointmentForm">
+      <p><strong>Specialization:</strong> <span id="specialization">Loading...</span></p>
+      <p><strong>Clinic:</strong> <span id="clinic">Loading...</span></p>
+
+      <label for="appointmentDate">Date:</label><br />
+      <input type="date" id="appointmentDate" required /><br /><br />
+
+      <label for="appointmentTime">Time:</label><br />
+      <input type="time" id="appointmentTime" required /><br /><br />
+
+      <label for="documents">Upload Medical Reports (Optional):</label><br />
+      <input type="file" id="documents" multiple /><br /><br />
+
+      <button type="submit">Book Appointment</button>
+    </form>
+  </section>
+
+  <script src="js/book-appointment.js"></script>
+</body>
+</html>

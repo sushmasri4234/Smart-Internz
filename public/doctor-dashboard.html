@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Doctor Dashboard - DocSpot</title>
+  <link rel="stylesheet" href="css/doctor-dashboard.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Welcome Dr. <span id="doctorName">Loading...</span> 👨‍⚕️</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <section id="doctorProfile">
+    <h2>Your Profile</h2>
+    <p><strong>Specialization:</strong> <span id="specialization"></span></p>
+    <p><strong>Experience:</strong> <span id="experience"></span></p>
+    <p><strong>Clinic Address:</strong> <span id="clinicAddress"></span></p>
+  </section>
+
+  <section id="appointmentsSection">
+    <h2>Upcoming Appointments</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Patient Name</th>
+          <th>Date & Time</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="appointmentsTable">
+        <!-- Appointments will be injected here -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="js/doctor-dashboard.js"></script>
+</body>
+</html>
