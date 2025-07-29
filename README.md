@@ -184,5 +184,5 @@ Make sure to follow the contribution guidelines and write clean, well-documented
 ## 📧 Contact
 
 Have questions or want to collaborate?  
-📬 Email:  [Mail me..](cherukurimeenakshi555@gmail.com)  
+📬 Email:  [Mail me..](sushmasri.keerthi@sasi.ac.in)  
 🌐 GitHub: [Keerthi SushmaSri](https://github.com/sushmasri4234/ )
